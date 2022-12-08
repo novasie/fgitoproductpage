@@ -2387,3 +2387,6 @@ html.no-csstransitions .home-content__main {
 }
 
 /*# sourceMappingURL=main.css.map */
+.info-main h1 {
+  text-transform: uppercase
+}
