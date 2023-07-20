@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animate-border {
+    position: relative;
+  }
+  
+  .animate-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FF0000;
+    transition: width 0.3s ease-out; /* Adjust the animation speed as desired */
+  }
+  
+  .animate-border:hover::after {
+    width: 100%;
+  }
+  

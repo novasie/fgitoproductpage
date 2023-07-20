@@ -1,8 +1,11 @@
+import Banner from '@/components/contact/banner/Banner'
 import React from 'react'
 
 const Page = () => {
   return (
-    <div>contact</div>
+    <div>
+      <Banner/>
+    </div>
   )
 }
 
