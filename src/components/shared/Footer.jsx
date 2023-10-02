@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex justify-center items-center py-[10px] bg-theme-green ">
         <div
           className={classNames(
-            "text-theme-white text-[15px]",
+            "text-theme-white text-[15px] text-center",
             roboto_500.className
           )}
         >
