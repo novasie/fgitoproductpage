@@ -5,7 +5,11 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className={classNames("mt-[70px] px-[80px]")}>
+      <div
+        className={classNames(
+          "lg:mt-[70px] sm1:mt-[30px] lg:px-[80px] sm1:px-[20px]"
+        )}
+      >
         <div className="flex justify-center">
           <div>
             <h2
@@ -29,8 +33,13 @@ const About = () => {
           </div>
         </div>
         <div className="grid grid-cols-6 mt-[10px]">
-          <div className="col-span-2"></div>
-          <div className={classNames("col-span-4 text-theme-black text-[16px] text-justify",roboto_300)}>
+          <div className="lg:col-span-2 sm1:col-span-6"></div>
+          <div
+            className={classNames(
+              "lg:col-span-4 sm1:col-span-6 text-theme-black text-[16px] text-justify",
+              roboto_300
+            )}
+          >
             India being a multi-ethnic culture, there is a vast and wide range
             of food here. The specialty of the delicious and exotic cuisine of
             India is the subtle use of spices and herbs in it. But with rapid

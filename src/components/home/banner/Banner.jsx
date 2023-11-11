@@ -4,7 +4,7 @@ import Content from "./Content";
 
 const Banner = () => {
   return (
-    <div className="bg-[url('/img/homeBannerBg.svg')] h-[600px] w-full ">
+    <div className="bg-[url('/img/homeBannerBg.svg')] lg:h-[600px] sm1:h-[720px] w-full ">
       <Header />
       <Content/>
     </div>
