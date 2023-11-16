@@ -1,15 +1,14 @@
-import { roboto_300, roboto_500, roboto_700 } from "@/app/fonts";
-import classNames from "classnames";
-import React from "react";
+import { roboto_500, roboto_700 } from "@/app/fonts";
+import clsx from "clsx";
 
 const Usp = () => {
   return (
     <>
-      <div className={classNames("mt-[70px] px-[80px]")}>
+      <div className={clsx("mt-[70px] px-[80px]")}>
         <div className="flex justify-center">
           <div>
             <h2
-              className={classNames(
+              className={clsx(
                 "text-center text-[28px] text-theme-black",
                 roboto_700
               )}
@@ -17,7 +16,7 @@ const Usp = () => {
               Why we are different?
             </h2>
             <div
-              className={classNames(
+              className={clsx(
                 "flex justify-center items-center gap-2 text-[14px] text-theme-green",
                 roboto_500.className
               )}
@@ -31,15 +30,15 @@ const Usp = () => {
         <div className="grid grid-cols-6 mt-[10px]">
           <div className="col-span-2 w-full flex justify-center items-center">
             <div
-              className={classNames(
+              className={clsx(
                 "w-[400px] h-[250px] bg-theme-gray rounded-[10px] p-[20px]"
               )}
             >
-              <div className={classNames("w-full  flex justify-center")}>
-                <img className={classNames("h-[170px]")} src="/img/usp1.png" />
+              <div className={clsx("w-full  flex justify-center")}>
+                <img className={clsx("h-[170px]")} src="/img/usp1.png" />
               </div>
               <div
-                className={classNames(
+                className={clsx(
                   "w-ful text-center text-[12px] text-theme-green"
                 )}
               >
@@ -51,14 +50,11 @@ const Usp = () => {
           <div className="col-span-2 w-full flex justify-center items-center">
             <div className="w-[420px] h-[370px] rounded-[10px] flex justify-center items-center bg-[url('/img/homeBannerBg.svg')]">
               <div>
-                <div className={classNames("w-full flex justify-center")}>
-                  <img
-                    className={classNames("h-[170px]")}
-                    src="/img/usp2.png"
-                  />
+                <div className={clsx("w-full flex justify-center")}>
+                  <img className={clsx("h-[170px]")} src="/img/usp2.png" />
                 </div>
                 <div
-                  className={classNames(
+                  className={clsx(
                     "w-ful text-center text-[12px] mt-[10px] text-theme-green"
                   )}
                 >
@@ -69,15 +65,15 @@ const Usp = () => {
           </div>
           <div className="col-span-2 w-full flex justify-center items-center">
             <div
-              className={classNames(
+              className={clsx(
                 "w-[400px] h-[250px] bg-theme-gray rounded-[10px] p-[20px]"
               )}
             >
-              <div className={classNames("w-full  flex justify-center")}>
-                <img className={classNames("h-[170px]")} src="/img/usp3.png" />
+              <div className={clsx("w-full  flex justify-center")}>
+                <img className={clsx("h-[170px]")} src="/img/usp3.png" />
               </div>
               <div
-                className={classNames(
+                className={clsx(
                   "w-ful text-center text-[12px] text-theme-green"
                 )}
               >

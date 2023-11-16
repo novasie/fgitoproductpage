@@ -1,5 +1,5 @@
 import { roboto_500, roboto_700 } from "@/app/fonts";
-import classNames from "classnames";
+import clsx from "clsx";
 import React from "react";
 
 const Content = () => {
@@ -8,17 +8,12 @@ const Content = () => {
       <div className="lg:block sm1:hidden px-[80px] flex justify-center items-center">
         <div className="w-full grid grid-cols-2 my-[30px]">
           <div className="block">
-            <h2
-              className={classNames(
-                "uppercase text-[36px]",
-                roboto_700.className
-              )}
-            >
+            <h2 className={clsx("uppercase text-[36px]", roboto_700.className)}>
               Welcome to fgito
             </h2>
             <div className="h-[2px] w-[35%] bg-theme-red"></div>
             <h3
-              className={classNames(
+              className={clsx(
                 "w-[532px] h-fit text-justify text-[16px] font-[300] text-theme-black mt-[30px]",
                 roboto_500.className
               )}
@@ -32,7 +27,7 @@ const Content = () => {
             </h3>
             <div className="flex justify-start items-center mt-[50px] gap-[64px]">
               <button
-                className={classNames(
+                className={clsx(
                   "text-[16px] px-[12px] py-[8px] bg-theme-green text-theme-white rounded-[5px]",
                   roboto_700
                 )}
@@ -56,17 +51,12 @@ const Content = () => {
             <img className="h-[236px] " src="/img/homechef-home1.gif" />
           </div>
           <div className="block">
-            <h2
-              className={classNames(
-                "uppercase text-[36px]",
-                roboto_700.className
-              )}
-            >
+            <h2 className={clsx("uppercase text-[36px]", roboto_700.className)}>
               Welcome to fgito
             </h2>
             <div className="h-[2px] w-[35%] bg-theme-red"></div>
             <h3
-              className={classNames(
+              className={clsx(
                 "h-fit text-justify text-[16px] font-[300] text-theme-black mt-[10px]",
                 roboto_500.className
               )}
@@ -80,7 +70,7 @@ const Content = () => {
             </h3>
             <div className="flex justify-start items-center mt-[10px] gap-[64px]">
               <button
-                className={classNames(
+                className={clsx(
                   "text-[16px] px-[8px] py-[8px] bg-theme-green text-theme-white rounded-[5px]",
                   roboto_700
                 )}

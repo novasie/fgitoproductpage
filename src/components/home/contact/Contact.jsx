@@ -1,16 +1,16 @@
 import { roboto_300, roboto_500, roboto_700 } from "@/app/fonts";
 import { footerContact, socialMedia } from "@/config/Constant";
-import classNames from "classnames";
+import clsx from "clsx";
 import React from "react";
 
 const Contact = () => {
   return (
     <>
-      <div className={classNames("mt-[70px] mb-[30px] px-[80px]")}>
+      <div className={clsx("mt-[70px] mb-[30px] px-[80px]")}>
         <div className="flex justify-center">
           <div>
             <h2
-              className={classNames(
+              className={clsx(
                 "text-center text-[28px] text-theme-black",
                 roboto_700
               )}
@@ -18,7 +18,7 @@ const Contact = () => {
               Contact us
             </h2>
             <div
-              className={classNames(
+              className={clsx(
                 "flex justify-center items-center gap-2 text-[14px] text-theme-green",
                 roboto_500.className
               )}
@@ -50,13 +50,14 @@ const Contact = () => {
                   <div className="flex justify-start items-center mb-[50px] gap-[20px]">
                     <div>
                       <img
-                        src={item.icon} alt={item.name}
+                        src={item.icon}
+                        alt={item.name}
                         className="h-[42px] w-[42px]"
                       />
                     </div>
                     <div className="">
                       <div
-                        className={classNames(
+                        className={clsx(
                           "text-[15px] capitalize",
                           roboto_700.className
                         )}
@@ -64,10 +65,7 @@ const Contact = () => {
                         {item.name}
                       </div>
                       <div
-                        className={classNames(
-                          "text-[15px]",
-                          roboto_500.className
-                        )}
+                        className={clsx("text-[15px]", roboto_500.className)}
                       >
                         {item.value}
                       </div>

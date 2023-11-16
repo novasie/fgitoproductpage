@@ -1,19 +1,19 @@
 import { roboto_300, roboto_500, roboto_700 } from "@/app/fonts";
-import classNames from "classnames";
+import clsx from "clsx";
 import React from "react";
 
 const About = () => {
   return (
     <>
       <div
-        className={classNames(
+        className={clsx(
           "lg:mt-[70px] sm1:mt-[30px] lg:px-[80px] sm1:px-[20px]"
         )}
       >
         <div className="flex justify-center">
           <div>
             <h2
-              className={classNames(
+              className={clsx(
                 "text-center text-[28px] text-theme-black",
                 roboto_700
               )}
@@ -21,7 +21,7 @@ const About = () => {
               About us
             </h2>
             <div
-              className={classNames(
+              className={clsx(
                 "flex justify-center items-center gap-2 text-[14px] text-theme-green",
                 roboto_500.className
               )}
@@ -35,7 +35,7 @@ const About = () => {
         <div className="grid grid-cols-6 mt-[10px]">
           <div className="lg:col-span-2 sm1:col-span-6"></div>
           <div
-            className={classNames(
+            className={clsx(
               "lg:col-span-4 sm1:col-span-6 text-theme-black text-[16px] text-justify",
               roboto_300
             )}

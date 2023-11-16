@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { roboto_500 } from "@/app/fonts";
-import classNames from "classnames";
 import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const Header = () => {
   const pathname = usePathname();
@@ -27,7 +27,7 @@ const Header = () => {
                 </a>
               </div>
               <div
-                className={classNames(
+                className={clsx(
                   "text-[25px] border-b-[2px] border-theme-red px-[2px]",
                   roboto_500.className
                 )}
@@ -36,13 +36,13 @@ const Header = () => {
               </div>
             </div>
             <div
-              className={classNames(
+              className={clsx(
                 "col-span-3 flex justify-end items-center gap-[60px] text-[18px] font-[500]",
                 roboto_500.className
               )}
             >
               <a
-                className={classNames(
+                className={clsx(
                   "px-[2px] ",
                   pathname === "/"
                     ? "border-b-[2px] border-theme-red"
@@ -53,7 +53,7 @@ const Header = () => {
                 Home
               </a>
               <a
-                className={classNames(
+                className={clsx(
                   "px-[2px] ",
                   pathname === "/homechef"
                     ? "border-b-[2px] border-theme-red"
@@ -64,7 +64,7 @@ const Header = () => {
                 HomeChef
               </a>
               <a
-                className={classNames(
+                className={clsx(
                   "px-[2px] ",
                   pathname === "/services"
                     ? "border-b-[2px] border-theme-red"
@@ -75,7 +75,7 @@ const Header = () => {
                 Food Services
               </a>
               <a
-                className={classNames(
+                className={clsx(
                   "px-[2px] ",
                   pathname === "/help"
                     ? "border-b-[2px] border-theme-red"
@@ -86,7 +86,7 @@ const Header = () => {
                 Help
               </a>
               <a
-                className={classNames(
+                className={clsx(
                   "px-[2px] ",
                   pathname === "/contact"
                     ? "border-b-[2px] border-theme-red"
@@ -101,7 +101,10 @@ const Header = () => {
         </div>
       </div>
       <div className="sm1:block lg:hidden">
-        <div onClick={() => toggleMobileMenu()} className="w-full flex justify-between items-center cursor-pointer">
+        <div
+          onClick={() => toggleMobileMenu()}
+          className="w-full flex justify-between items-center cursor-pointer"
+        >
           <div className="col-span-1 flex justify-start items-center gap-[10px]">
             <div className="rounded-full overflow-hidden">
               <a href="/">
@@ -109,7 +112,7 @@ const Header = () => {
               </a>
             </div>
             <div
-              className={classNames(
+              className={clsx(
                 "text-[25px] border-b-[2px] border-theme-red px-[2px]",
                 roboto_500.className
               )}
@@ -122,20 +125,28 @@ const Header = () => {
             src="/img/icons/hamburger.svg"
           />
         </div>
-        <div className={classNames("bg-theme-green h-[100vh] w-[200px] absolute right-0 top-0",mobileMenu)}>
+        <div
+          className={clsx(
+            "bg-theme-green h-[100vh] w-[200px] absolute right-0 top-0",
+            mobileMenu
+          )}
+        >
           <div className="w-full py-2 flex flex-col">
-            <div  onClick={() => toggleMobileMenu()} className="flex justify-end mx-4 text-theme-white my-2 text-xl cursor-pointer">
+            <div
+              onClick={() => toggleMobileMenu()}
+              className="flex justify-end mx-4 text-theme-white my-2 text-xl cursor-pointer"
+            >
               X
             </div>
             <div>
               <div
-                className={classNames(
+                className={clsx(
                   "col-span-3 flex flex-col justify-end items-center gap-[60px] text-[18px] text-theme-white font-[400]",
                   roboto_500.className
                 )}
               >
                 <a
-                  className={classNames(
+                  className={clsx(
                     "px-[2px] ",
                     pathname === "/"
                       ? "text-[20px] font-[800]"
@@ -146,7 +157,7 @@ const Header = () => {
                   Home
                 </a>
                 <a
-                  className={classNames(
+                  className={clsx(
                     "px-[2px] ",
                     pathname === "/homechef"
                       ? "text-[20px] font-[800]"
@@ -157,7 +168,7 @@ const Header = () => {
                   HomeChef
                 </a>
                 <a
-                  className={classNames(
+                  className={clsx(
                     "px-[2px] ",
                     pathname === "/services"
                       ? "text-[20px] font-[800]"
@@ -168,7 +179,7 @@ const Header = () => {
                   Food Services
                 </a>
                 <a
-                  className={classNames(
+                  className={clsx(
                     "px-[2px] ",
                     pathname === "/help"
                       ? "text-[20px] font-[800]"
@@ -179,7 +190,7 @@ const Header = () => {
                   Help
                 </a>
                 <a
-                  className={classNames(
+                  className={clsx(
                     "px-[2px] ",
                     pathname === "/contact"
                       ? "text-[20px] font-[800]"
