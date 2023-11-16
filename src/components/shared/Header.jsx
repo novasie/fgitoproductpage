@@ -17,7 +17,7 @@ const Header = () => {
   };
   return (
     <>
-      <div className="lg:block hidden">
+      <div className="lg:block hidden w-full">
         <div className="w-full">
           <div className="grid grid-cols-4 px-20 py-[10px]">
             <div className="col-span-1 flex justify-start items-center gap-[25px]">

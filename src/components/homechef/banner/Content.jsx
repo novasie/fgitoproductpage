@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 const Content = () => {
   return (
-    <div className="px-[80px] flex justify-center items-center">
+    <div className="px-[80px] h-full flex justify-center items-center">
       <div className="w-full grid grid-cols-2 my-[30px]">
         <div className="flex justify-center items-center">
           <img className="h-[300px] " src="/img/homechef1.gif" />

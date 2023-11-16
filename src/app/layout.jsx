@@ -13,11 +13,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={clsx(inter.className, "max-w-screen-2xl mx-auto")}>
-        <div className="flex flex-col justify-between">
+      <body
+        className={clsx(
+          inter.className,
+          "max-w-screen-2xl mx-auto min-h-screen"
+        )}
+      >
+        <div className="flex items-center min-h-[calc(100vh-42px)] flex-col justify-between">
           {children}
-          <Footer />
         </div>
+        <Footer />
       </body>
     </html>
   );
