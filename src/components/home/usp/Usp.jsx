@@ -31,7 +31,7 @@ const Usp = () => {
           <div className="col-span-2 w-full flex justify-center items-center">
             <div
               className={clsx(
-                "w-[400px] h-[250px] bg-theme-gray rounded-[10px] p-[20px]"
+                "w-[400px] min-h-[250px] bg-theme-gray rounded-[10px] p-[20px]"
               )}
             >
               <div className={clsx("w-full  flex justify-center")}>
@@ -48,7 +48,7 @@ const Usp = () => {
             </div>
           </div>
           <div className="col-span-2 w-full flex justify-center items-center">
-            <div className="w-[420px] h-[370px] rounded-[10px] flex justify-center items-center bg-[url('/img/homeBannerBg.svg')]">
+            <div className="w-[420px] min-h-[370px] rounded-[10px] flex justify-center items-center bg-[url('/img/homeBannerBg.svg')]">
               <div>
                 <div className={clsx("w-full flex justify-center")}>
                   <img className={clsx("h-[170px]")} src="/img/usp2.png" />
@@ -66,7 +66,7 @@ const Usp = () => {
           <div className="col-span-2 w-full flex justify-center items-center">
             <div
               className={clsx(
-                "w-[400px] h-[250px] bg-theme-gray rounded-[10px] p-[20px]"
+                "w-[400px] min-h-[250px] bg-theme-gray rounded-[10px] p-[20px]"
               )}
             >
               <div className={clsx("w-full  flex justify-center")}>
