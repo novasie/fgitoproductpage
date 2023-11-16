@@ -12,7 +12,7 @@ const Footer = () => {
             roboto_500.className
           )}
         >
-          ©Copyright 2022 All Right Reserved By{" "}
+          ©Copyright {new Date().getFullYear()} All Right Reserved By
           <span className="underline">
             <a href="/">Novasie Technologies Pvt Ltd</a>
           </span>
