@@ -1,6 +1,7 @@
 import Footer from "@/components/shared/Footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import clsx from "clsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={clsx(inter.className, "max-w-7xl mx-auto")}>
         <div className="flex flex-col h-screen justify-between">
           {children}
           <Footer />
