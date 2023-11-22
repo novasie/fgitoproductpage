@@ -1,5 +1,6 @@
 import { roboto_300, roboto_500, roboto_700 } from "@/app/fonts";
 import clsx from "clsx";
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -30,10 +31,12 @@ const About = () => {
         </div>
       </div>
       <div className="grid grid-cols-6 mt-[10px]">
-        <div className="lg:col-span-2 sm1:col-span-6"></div>
+        <div className="lg:col-span-2 md:col-span-3 sm1:col-span-6 items-center flex justify-center">
+          <Image src="/img/About us.svg" width={750} height={450} />
+        </div>
         <div
           className={clsx(
-            "lg:col-span-4 sm1:col-span-6 text-theme-black text-[16px] text-justify",
+            "lg:col-span-4 md:col-span-3 sm1:col-span-6 text-theme-black text-[16px] text-justify",
             roboto_300
           )}
         >
