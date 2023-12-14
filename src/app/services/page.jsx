@@ -2,11 +2,7 @@ import Banner from "@/components/services/banner/Banner";
 import React from "react";
 
 const Page = () => {
-  return (
-    <div>
-      <Banner />
-    </div>
-  );
+  return <Banner />;
 };
 
 export default Page;

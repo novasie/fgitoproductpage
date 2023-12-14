@@ -1,12 +1,8 @@
-import Banner from '@/components/homechef/banner/Banner'
-import React from 'react'
+import Banner from "@/components/homechef/banner/Banner";
+import React from "react";
 
 const Page = () => {
-  return (
-    <div>
-      <Banner/>
-    </div>
-  )
-}
+  return <Banner />;
+};
 
-export default Page
+export default Page;

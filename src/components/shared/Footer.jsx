@@ -1,5 +1,5 @@
 import { roboto_500 } from "@/app/fonts";
-import classNames from "classnames";
+import clsx from "clsx";
 import React from "react";
 
 const Footer = () => {
@@ -7,12 +7,12 @@ const Footer = () => {
     <div className="w-full">
       <div className="flex justify-center items-center py-[10px] bg-theme-green ">
         <div
-          className={classNames(
+          className={clsx(
             "text-theme-white text-[15px] text-center",
             roboto_500.className
           )}
         >
-          ©Copyright 2022 All Right Reserved By{" "}
+          ©Copyright {new Date().getFullYear()} All Right Reserved By
           <span className="underline">
             <a href="/">Novasie Technologies Pvt Ltd</a>
           </span>
