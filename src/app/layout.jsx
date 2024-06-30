@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           "max-w-screen-2xl mx-auto min-h-screen"
         )}
       >
-        <div className="flex items-center min-h-[calc(100vh-42px)] flex-col justify-between">
+        <div className="flex items-center min-h-[calc(100vh-42px)] flex-col justify-start">
           {children}
         </div>
         <Footer />

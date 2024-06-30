@@ -1,16 +1,12 @@
-import About from "@/components/home/about/About";
-import Banner from "@/components/home/banner/Banner";
-import Contact from "@/components/home/contact/Contact";
-import Usp from "@/components/home/usp/Usp";
+import About from "@/components/home/About";
+import Banner from "@/components/home/Banner";
+import Header from "@/components/shared/Header";
 
 export default function Home() {
   return (
     <>
-      <Banner />
+      <Banner/>
       <About />
-      <Usp />
-      {/* <Testimonial/> */}
-      <Contact />
     </>
   );
 }
