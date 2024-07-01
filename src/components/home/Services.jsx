@@ -35,7 +35,7 @@ const Services = () => {
               </div>
               <div className="text-theme-black text-[2rem] leading-[40px] w-[70%] mt-[3rem]">
                 Begin your culinary adventure with{" "}
-                <span className="text-theme-yellow">FGITO</span>
+                <span className="text-theme-red font-semibold">FGITO</span>
               </div>
               <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[2rem] text-justify">
                 FGITO proudly offers a variety of services designed to connect
@@ -50,24 +50,22 @@ const Services = () => {
                 <div className="absolute bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
                   <div className="transition-transform duration-1000 ease-in-out group-hover:scale-105">
                     <Image
-                      src={"/services/catering.png"}
+                      src={"/services/bulk.png"}
                       width={80}
                       height={80}
                     />
                   </div>
                   <div className="text-theme-black text-[1.25rem] leading-5 font-bold uppercase mt-[.75rem] transition-all duration-1000 ease-in-out">
                     <span className="text-theme-red-100 transition-all duration-1000 ease-in-out">
-                      Become
+                    Get-Together
                     </span>{" "}
                     <br />
                     <span className="group-hover:text-theme-white transition-all duration-1000 ease-in-out">
-                      Homechef
+                    Order
                     </span>
                   </div>
-                  <div className="text-theme-black text-[1rem] leading-[20px] font-extralight mt-[.75rem] group-hover:text-theme-white transition-all duration-1000 ease-in-out hidden group-hover:block">
-                    Busy lives, long work hours, and lack of time lead to
-                    unhealthy choices like junk food or impersonal restaurant
-                    meals.
+                  <div className="text-theme-black text-[.75rem] leading-[20px] font-bold mt-[.75rem] group-hover:text-theme-white transition-all duration-1000 ease-in-out hidden group-hover:block">
+                  We understand the big things you need to handle while hosting your small party at home. Especially when it comes to food. We are happy to provide delectable, hot, and healthy cuisine at your doorstep for home gatherings
                   </div>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-theme-green transition-transform duration-1000 ease-in-out group-hover:translate-y-0 translate-y-full z-0"></div>
@@ -91,10 +89,8 @@ const Services = () => {
                       Subscription 
                     </span>
                   </div>
-                  <div className="text-theme-black text-[1rem] leading-[20px] font-extralight mt-[.75rem] group-hover:text-theme-white transition-all duration-1000 ease-in-out hidden group-hover:block">
-                    Busy lives, long work hours, and lack of time lead to
-                    unhealthy choices like junk food or impersonal restaurant
-                    meals.
+                  <div className="text-theme-black text-[.75rem] leading-[20px] font-bold mt-[.75rem] group-hover:text-theme-white transition-all duration-1000 ease-in-out hidden group-hover:block">
+                  FGITO also provides subscription based delivery services. Customize and schedule daily, weekly or monthly meal plans and our team will deliver on time.
                   </div>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-theme-green transition-transform duration-1000 ease-in-out group-hover:translate-y-0 translate-y-full z-0"></div>
@@ -118,10 +114,8 @@ const Services = () => {
                       Vendoring
                     </span>
                   </div>
-                  <div className="text-theme-black text-[1rem] leading-[20px] font-extralight mt-[.75rem] group-hover:text-theme-white transition-all duration-1000 ease-in-out hidden group-hover:block">
-                    Busy lives, long work hours, and lack of time lead to
-                    unhealthy choices like junk food or impersonal restaurant
-                    meals.
+                  <div className="text-theme-black text-[.75rem] leading-[20px] font-bold mt-[.75rem] group-hover:text-theme-white transition-all duration-1000 ease-in-out hidden group-hover:block">
+                  Treat your employees with healthy  and delicious meals. Give no reason for low enegetic days with food prepared by our home chefs. Best cleaning and hygiene practices are maintained to replicate the exact love and taste of home. 
                   </div>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-theme-green transition-transform duration-1000 ease-in-out group-hover:translate-y-0 translate-y-full z-0"></div>
@@ -138,21 +132,21 @@ const Services = () => {
                   </div>
                   <div className="text-theme-black text-[1.25rem] leading-5 font-bold uppercase mt-[.75rem] transition-all duration-1000 ease-in-out">
                     <span className="text-theme-red-100 transition-all duration-1000 ease-in-out">
-                      User App
+                    Order
                     </span>{" "}
                     <br />
                     <span className="group-hover:text-theme-white transition-all duration-1000 ease-in-out">
-                      Coming soon
+                      on-demand
                     </span>
                   </div>
-                  <div className="text-theme-black text-[1rem] leading-[20px] font-extralight mt-[.75rem] group-hover:text-theme-white transition-all duration-1000 ease-in-out hidden group-hover:block">
+                  <div className="text-theme-black text-[0.75rem] leading-[20px] font-bold mt-[.75rem] group-hover:text-theme-white transition-all duration-1000 ease-in-out hidden group-hover:block">
                     Busy lives, long work hours, and lack of time lead to
                     unhealthy choices like junk food or impersonal restaurant
                     meals.
                   </div>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-theme-green transition-transform duration-1000 ease-in-out group-hover:translate-y-0 translate-y-full z-0"></div>
-                {/* <button className="px-[1rem] py-[.25rem] bg-theme-red-200 rounded text-theme-white uppercase text-[1rem] font-bold absolute top-2 right-2">info</button> */}
+                <button className="px-[1rem] py-[.25rem] bg-theme-red-200 rounded text-theme-white uppercase text-[1rem] font-bold absolute top-2 right-2">info</button>
               </div>
             </div>
           </div>

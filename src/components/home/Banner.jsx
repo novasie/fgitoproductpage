@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import {PrimaryButton} from "../common/Button";
+import { PrimaryButton } from "../common/Button";
 
 const Banner = () => {
   return (
@@ -12,9 +12,14 @@ const Banner = () => {
             home-cooked meals? <br />
             Your taste of home is here
           </div>
-          <PrimaryButton
-            name={"contact"}
-          ></PrimaryButton>
+          <div className="flex gap-3 justify-start">
+            <div>
+              <PrimaryButton name={"try us"}></PrimaryButton>
+            </div>
+            <div>
+              <PrimaryButton name={"become homechef"}></PrimaryButton>
+            </div>
+          </div>
         </div>
         <div className="z-[1]">
           <Image
@@ -24,7 +29,21 @@ const Banner = () => {
             width={500}
           />
         </div>
-        <Image className="absolute z-[0] opacity-[.05] " src={"/img/logo.png"} height={800} width={800} />
+        <Image
+          className="absolute z-[0] opacity-[.05] "
+          src={"/img/logo.png"}
+          height={800}
+          width={800}
+        />
+        {/* <div className="text-theme-white  absolute bottom-10 left-20 flex gap-5">
+          <button className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase text-[1rem] tracking-[3px] z-[10] font-bold">
+            Become Homechef
+          </button>
+          <button className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase text-[1rem] tracking-[3px] z-[10] font-bold">
+            Download app
+          </button>
+
+        </div> */}
       </div>
     </>
   );
