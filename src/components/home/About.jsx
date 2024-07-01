@@ -26,7 +26,7 @@ const About = () => {
             d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"
           ></path>{" "}
         </svg>
-        <div className="px-[100px] py-[6rem]">
+        <div className="px-[100px] pt-[6rem]">
           <div className="flex justify-start items-start">
             <div className="w-[45%]">
               <div className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase font-normal text-[.75rem] tracking-[3px]">
@@ -49,7 +49,7 @@ const About = () => {
                 <div className="text-theme-black text-[2rem] leading-[30px] w-[70%] mt-[3rem]">
                 Problem
                 </div>
-                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[20px]">
+                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[1.25rem] text-justify">
                 Busy lives, long work hours, and lack of time lead to unhealthy
                 choices like junk food or impersonal restaurant meals. 
                 </div>
@@ -59,7 +59,7 @@ const About = () => {
                 <div className="text-theme-black text-[2rem] leading-[30px] w-[70%] mt-[3rem]">
                 Solution
                 </div>
-                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[20px]">
+                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[1.25rem] text-justify">
                 FGITO connects you with home chefs who bring back the love and taste of "Ghar ka Khana Ghat se dur" 
                 </div>
               </div>
@@ -68,7 +68,7 @@ const About = () => {
                 <div className="text-theme-black text-[2rem] leading-[30px] w-[70%] mt-[3rem]">
                 Benefits
                 </div>
-                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[20px]">
+                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[1.25rem] text-justify">
                 FGITO connects you with home chefs who bring back the love and taste of "Ghar ka Khana Ghat se dur" 
                 </div>
               </div>
@@ -77,7 +77,7 @@ const About = () => {
                 <div className="text-theme-black text-[2rem] leading-[30px] w-[70%] mt-[3rem]">
                 Call to Action
                 </div>
-                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[20px]">
+                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[1.25rem] text-justify">
                 Eat healthier, boost your immunity, and ditch the delivery doubts FGITO and rediscover the joy of real food!
                 </div>
               </div>

@@ -1,3 +1,5 @@
+const { DEFAULT_SERIF_FONT } = require("next/dist/shared/lib/constants");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,18 +14,20 @@ module.exports = {
       "theme-red": {
         DEFAULT: "#FF0000",
         100: "#ff4040",
-        200:"#e33924",
+        200: "#e33924",
       },
       "theme-yellow": {
-        DEFAULT:'#ffde5a',
-        100:''
+        DEFAULT: "#ffde5a",
+        50:"#ffde5a2e",
+        100: "",
       },
       "theme-green": {
-        DEFAULT:"#0D6F39",
-        100:"#83ffb87d",
-        900:'#00210e'
+        DEFAULT: "#0D6F39",
+        50:"#83ffb838",
+        100: "#83ffb87d",
+        900: "#00210e",
       },
-      "theme-gray": "#F4F4F4",
+      "theme-gray": { DEFAULT: "#F4F4F4" },
       "theme-gray-500": "#868686",
     },
     extend: {
