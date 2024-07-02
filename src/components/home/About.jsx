@@ -60,7 +60,7 @@ const About = () => {
                 Solution
                 </div>
                 <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[1.25rem] text-justify">
-                FGITO connects you with home chefs who bring back the love and taste of "Ghar ka Khana Ghat se dur" 
+                FGITO connects you with home chefs who bring back the love and taste of "Ghar ka Khana Ghar se dur" 
                 </div>
               </div>
               <div className="flex flex-col justify-start items-start">
