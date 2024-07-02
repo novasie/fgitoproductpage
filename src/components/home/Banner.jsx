@@ -14,7 +14,7 @@ const Banner = () => {
           </div>
           <div className="flex gap-3 justify-start">
             <div>
-              <PrimaryButton name={"try us"}></PrimaryButton>
+              <PrimaryButton name={"try fgito"}></PrimaryButton>
             </div>
             <div>
               <PrimaryButton name={"become homechef"}></PrimaryButton>
@@ -24,16 +24,17 @@ const Banner = () => {
         <div className="z-[1]">
           <Image
             className="z-10"
-            src="/doodle/doodleimage_5.png"
+            // src="/doodle/doodleimage_5.png"
+            src="/comming_soon.png"
             height={500}
             width={500}
           />
         </div>
         <Image
-          className="absolute z-[0] opacity-[.05] "
+          className="absolute z-[0] top-5 left-5 opacity-[1] "
           src={"/img/logo.png"}
-          height={800}
-          width={800}
+          height={120}
+          width={120}
         />
         {/* <div className="text-theme-white  absolute bottom-10 left-20 flex gap-5">
           <button className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase text-[1rem] tracking-[3px] z-[10] font-bold">
