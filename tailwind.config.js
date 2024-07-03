@@ -25,6 +25,7 @@ module.exports = {
         DEFAULT: "#0D6F39",
         50:"#83ffb838",
         100: "#83ffb87d",
+        300:"#0d6f39b0",
         900: "#00210e",
       },
       "theme-gray": { DEFAULT: "#F4F4F4" },

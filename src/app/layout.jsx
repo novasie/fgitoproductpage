@@ -1,7 +1,8 @@
-import Footer from "@/components/shared/Footer";
+import Copyright from "@/components/shared/Copyright";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import clsx from "clsx";
+import Footer from "@/components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer />
+        <Copyright />
       </body>
     </html>
   );
