@@ -36,7 +36,7 @@ const Homechef = () => {
               </div>
               <div className="text-theme-black text-[2rem] leading-[40px] w-[70%] mt-[3rem]">
               Showcase your culinary magic to the {" "}
-                <span className="text-theme-red font-semibold">WORLD</span>
+                <span className="text-theme-green font-semibold">WORLD</span>
               </div>
               <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[2rem] text-justify">
               Share your culinary creations with the world! Unleash your cooking magic and let everyone savor the flavors you create. Join us and showcase your skills, bringing the joy of home-cooked meals to a wider audience. Let your kitchen talents shine and connect with food lovers everywhere!

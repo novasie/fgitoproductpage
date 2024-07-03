@@ -36,6 +36,18 @@ const Banner = () => {
           height={120}
           width={120}
         />
+        <div className="absolute z-[0] flex gap-1 justify-center items-center bottom-5 right-5 opacity-[1]">
+          <Image
+            className=""
+            src={"/img/location.png"}
+            height={20}
+            width={20}
+          />
+          <span className="text-theme-white font-bold text-[.75rem]">
+            Only Available in Noida
+          </span>
+        </div>
+
         {/* <div className="text-theme-white  absolute bottom-10 left-20 flex gap-5">
           <button className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase text-[1rem] tracking-[3px] z-[10] font-bold">
             Become Homechef

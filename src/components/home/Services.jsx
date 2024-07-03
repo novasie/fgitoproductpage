@@ -35,7 +35,7 @@ const Services = () => {
               </div>
               <div className="text-theme-black text-[2rem] leading-[40px] w-[70%] mt-[3rem]">
                 Begin your culinary adventure with{" "}
-                <span className="text-theme-red font-semibold">FGITO</span>
+                <span className="text-theme-green font-semibold">FGITO</span>
               </div>
               <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[2rem] text-justify">
                 FGITO proudly offers a variety of services designed to connect
