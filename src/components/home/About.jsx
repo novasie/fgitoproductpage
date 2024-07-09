@@ -26,59 +26,90 @@ const About = () => {
             d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"
           ></path>{" "}
         </svg>
-        <div className="px-[100px] pt-[6rem]">
-          <div className="flex justify-start items-start">
-            <div className="w-[45%]">
+        <div className="w-full px-[2.7rem] py-[6rem]">
+          <div className="flex flex-col md:flex-row gap-12 md:gap-24">
+            <div className="flex flex-col gap-8 md:w-1/2">
               <div className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase font-normal text-[.75rem] tracking-[3px]">
                 About Fgito
               </div>
-              <div className="text-theme-black text-[2rem] leading-[40px] w-[70%] mt-[3rem]">
-                Bringing Back <br /> Home-Cooked Goodness in a Busy World
+              <div className="text-theme-black text-[2rem] leading-[40px] w-full sm:w-[70%] ">
+                Bringing Back Home-Cooked Goodness in a Busy World
               </div>
-              <div className="text-theme-black text-[1rem] leading-[40px] w-[70%] mt-[3rem] font-bold uppercase">
-              Why FGITO?
-              </div>
-              <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight">
-              Home cooks prioritize hygiene and quality over profit <br/>
-                Reconnect with the love and tradition of home-cooked meals.
+              <div className="flex flex-col gap-1 lg:gap-2">
+                <div className="text-theme-black text-xl lg:text-[1rem] leading-[40px] w-[70%] font-bold uppercase">
+                  Why FGITO?
+                </div>
+                <div className="text-theme-black w-full text-base  lg:text-[1rem] leading-[20px]  lg:w-[70%] font-extralight">
+                  Home cooks prioritize hygiene and quality over profit
+                  Reconnect with the love and tradition of home-cooked meals.
+                </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-x-[.5rem] gap-y-[4rem] w-[65%]">
-            <div className="flex flex-col justify-start items-start">
-                <Image src={"/img/icons/problem.png"} height={100} width={100} />
-                <div className="text-theme-black text-[2rem] leading-[30px] w-[70%] mt-[3rem]">
-                Problem
-                </div>
-                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[1.25rem] text-justify">
-                Busy lives, long work hours, and lack of time lead to unhealthy
-                choices like junk food or impersonal restaurant meals. 
-                </div>
-              </div>
-              <div className="flex flex-col justify-start items-start">
-                <Image src={"/img/icons/solution.png"} height={100} width={100} />
-                <div className="text-theme-black text-[2rem] leading-[30px] w-[70%] mt-[3rem]">
-                Solution
-                </div>
-                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[1.25rem] text-justify">
-                FGITO connects you with home chefs who bring back the love and taste of "Ghar ka Khana Ghar se dur" 
+            <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-x-[.5rem] md:gap-y-[4rem] lg:w-[65%]">
+              <div className="flex gap-6 lg:gap-8 w-full flex-col justify-start items-start ">
+                <Image
+                  src={"/img/icons/problem.png"}
+                  height={100}
+                  width={100}
+                />
+                <div className="flex flex-col gap-4 lg:gap-6">
+                  <div className="text-theme-black text-2xl lg:text-[2rem]  leading-[30px] sm:w-[60%]  ">
+                    Problem
+                  </div>
+                  <div className="text-theme-black text-base lg:text-[1rem] leading-[20px] md:w-[70%]  w-full font-extralight text-justify">
+                    Busy lives, long work hours, and lack of time lead to
+                    unhealthy choices like junk food or impersonal restaurant
+                    meals.
+                  </div>
                 </div>
               </div>
-              <div className="flex flex-col justify-start items-start">
-                <Image src={"/img/icons/benefit.png"} height={100} width={100} />
-                <div className="text-theme-black text-[2rem] leading-[30px] w-[70%] mt-[3rem]">
-                Benefits
-                </div>
-                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[1.25rem] text-justify">
-                FGITO connects you with home chefs who bring back the love and taste of "Ghar ka Khana Ghat se dur" 
+              <div className="flex flex-col gap-6 lg:gap-8 justify-start items-start">
+                <Image
+                  src={"/img/icons/solution.png"}
+                  height={100}
+                  width={100}
+                />
+                <div className="flex flex-col gap-4 lg:gap-6">
+                  <div className="text-theme-black text-2xl lg:text-[2rem] leading-[30px] sm:w-[60%] ">
+                    Solution
+                  </div>
+                  <div className="text-theme-black text-base lg:text-[1rem] leading-[20px] sm:w-[90%] md:w-[70%]  font-extralight text-justify">
+                    FGITO connects you with home chefs who bring back the love
+                    and taste of "Ghar ka Khana Ghar se dur"
+                  </div>
                 </div>
               </div>
-              <div className="flex flex-col justify-start items-start">
-                <Image src={"/img/icons/calltoaction.png"} height={100} width={100} />
-                <div className="text-theme-black text-[2rem] leading-[30px] w-[70%] mt-[3rem]">
-                Call to Action
+              <div className="flex flex-col gap-6 lg:gap-8 justify-start items-start">
+                <Image
+                  src={"/img/icons/benefit.png"}
+                  height={100}
+                  width={100}
+                />
+                <div className="flex flex-col gap-4 lg:gap-6">
+                  <div className="text-theme-black text-2xl lg:text-[2rem] leading-[30px] sm:w-[60%] ">
+                    Benefits
+                  </div>
+                  <div className="text-theme-black text-base lg:text-[1rem] leading-[20px]  md:w-[70%] font-extralight  text-justify">
+                    FGITO connects you with home chefs who bring back the love
+                    and taste of "Ghar ka Khana Ghat se dur"
+                  </div>
                 </div>
-                <div className="text-theme-black text-[1rem] leading-[20px] w-[70%] font-extralight mt-[1.25rem] text-justify">
-                Eat healthier, boost your immunity, and ditch the delivery doubts FGITO and rediscover the joy of real food!
+              </div>
+              <div className="flex  flex-col gap-6 lg:gap-8 justify-start items-start">
+                <Image
+                  src={"/img/icons/calltoaction.png"}
+                  height={100}
+                  width={100}
+                />
+
+                <div className="flex flex-col gap-4 lg:gap-6">
+                  <div className="text-theme-black text-2xl lg:text-[2rem] leading-[30px]  ">
+                    Call to Action
+                  </div>
+                  <div className="text-theme-black text-base lg:text-[1rem] leading-[20px]  sm:w-[90%] md:w-[70%] font-extralight text-justify">
+                    Eat healthier, boost your immunity, and ditch the delivery
+                    doubts FGITO and rediscover the joy of real food!
+                  </div>
                 </div>
               </div>
             </div>
