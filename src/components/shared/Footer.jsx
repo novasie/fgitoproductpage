@@ -4,19 +4,19 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div style={{ backgroundImage: "url('/img/homeBannerBg.svg')", backgroundSize: 'cover', backgroundPosition: 'center' }} className=" w-full py-[1rem] px-[100px]">
-        <div className="flex justify-between items-start relative">
-          <div className="flex flex-col justify-center gap-2 items-start w-[40%]">
+      <div style={{ backgroundImage: "url('/img/homeBannerBg.svg')", backgroundSize: 'cover', backgroundPosition: 'center' }} className=" w-full px-[10%] py-[2rem] lg:px-[100px]">
+        <div className="flex flex-col w-full  gap-8 md:gap-0 md:flex-row justify-between items-center md:items-start md:relative">
+          <div className="flex flex-col items-center  gap-2 md:items-start w-full md:w-[40%]">
             <Image src={"/logo.png"} width={150} height={150} />
             <div className="text-[2rem] font-semibold uppercase text-theme-green">
               Fg<span className="text-theme-red-100 lowercase">i</span>to
             </div>
-            <div className="text-theme-black text-[1rem] leading-[20px] font-semibold text-justify">
+            <div className="text-theme-black max-w-[20rem] md:text-[1rem] leading-[20px] font-semibold text-justify">
             Busy lifestyles often lead to unhealthy food choices. FGITO offers a permanent solution, ensuring you get nutritious, home-cooked meals even on your busiest days.
             </div>
           </div>
-          <div className="w-[60%] h-full flex flex-col justify-start items-end">
-            <div className="relative flex flex-col justify-center items-start gap-3">
+          <div className=" w-full md:w-[60%] h-full flex flex-col justify-start items-center md:items-end gap-8 md:gap-0">
+            <div className="relative flex flex-col justify-center items-start gap-4">
               <a
                 href="#_"
                 class="relative inline-flex items-center justify-center p-4 px-8 py-3 overflow-hidden font-bold uppercase text-theme-white transition duration-300 ease-out border-[.0rem] border-theme-red-100 rounded-md group text-[1.25rem] bg-theme-green-300"
@@ -70,7 +70,7 @@ const Footer = () => {
                 <span class="relative invisible">apply for homechef</span>
               </a>
             </div>
-            <div className="flex gap-4 absolute bottom-0">
+            <div className="flex md:items-start gap-4 md:absolute md:bottom-0">
               <a href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

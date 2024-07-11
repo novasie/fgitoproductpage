@@ -5,14 +5,14 @@ import { PrimaryButton } from "../common/Button";
 const Banner = () => {
   return (
     <>
-      <div className="flex justify-center items-center bg-theme-green-900 w-full h-[550px] gap-[100px] relative overflow-hidden">
-        <div className="z-[1] flex flex-col justify-center items-start gap-[30px]">
-          <div className="text-theme-white text-[3rem] leading-[55px] font-extralight tracking-[-2px]">
+      <div className="w-full px-[2.7rem] py-[6rem]  flex  flex-col-reverse lg:flex-row justify-center items-center bg-theme-green-900 h-auto gap-10 lg:gap-[100px] relative overflow-hidden ">
+        <div className="z-[1] w-fit flex flex-col gap-12 items-center justify-start lg:gap-[30px] ">
+          <div className="text-theme-white text-[1.8rem] text-center text w-full sm:text-[2.7rem] leading-12 tracking-[1px] lg:text-[2.5rem] xl:text-[3rem] lg:leading-[55px] font-extralight lg:tracking-[-2px]">
             Craving the comfort of <br />
             home-cooked meals? <br />
             Your taste of home is here
           </div>
-          <div className="flex gap-3 justify-start">
+          <div className="flex flex-col md:flex-row gap-5 xl:gap-3 xl:justify-start">
             <div>
               <PrimaryButton name={"try fgito"}></PrimaryButton>
             </div>
@@ -21,7 +21,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="z-[1]">
+        <div className="z-[1] mt-[4rem] md:mt-0 min-w-[15rem]">
           <Image
             className="z-10"
             // src="/doodle/doodleimage_5.png"
