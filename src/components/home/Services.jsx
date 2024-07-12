@@ -57,7 +57,7 @@ const Services = () => {
                       Order
                     </span>
                   </div>
-                  <div className="text-theme-black text-base leading-[26px] text-[.75rem] lg:leading-[20px] font-semibold mt-[.75rem] lg:group-hover:text-theme-white transition-all duration-1000 ease-in-out md:hidden group-hover:block">
+                  <div className="text-theme-black text-base leading-[26px] lg:text-[.75rem] lg:leading-[20px] font-semibold mt-[.75rem] lg:group-hover:text-theme-white transition-all duration-1000 ease-in-out md:hidden group-hover:block">
                     We understand the big things you need to handle while
                     hosting your small party at home. Especially when it comes
                     to food. We are happy to provide delectable, hot, and
