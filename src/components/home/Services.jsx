@@ -38,9 +38,7 @@ const Services = () => {
                 <span className="text-theme-green font-semibold">FGITO</span>
               </div>
               <div className="text-theme-black text-base lg:text-[1rem] leading-[20px] w-full md:w-[70%] lg:w-[80%] font-extralight mt-[2rem] text-justify">
-                FGITO proudly offers a variety of services designed to connect
-                you with the joys of home-cooked meals. You're craving the taste
-                of homemade food, we've got you covered
+              FGITO proudly offers a variety of services designed to connect you with the joys of home-cooked meals. If you're craving the taste of homemade food, we've got you covered.
               </div>
             </div>
 
@@ -90,9 +88,7 @@ const Services = () => {
                     </span>
                   </div>
                   <div className="text-theme-black text-base lg:text-[.75rem] leading-[26px] lg:leading-[20px] font-semibold mt-[.75rem] lg:group-hover:text-theme-white transition-all duration-1000 ease-in-out md:hidden lg:group-hover:block">
-                    FGITO also provides subscription based delivery services.
-                    Customize and schedule daily, weekly or monthly meal plans
-                    and our team will deliver on time.
+                  FGITO also provides subscription-based delivery services. Where you can schedule monthly meal plans and enjoy hassle-free delivery on time.
                   </div>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-theme-green transition-transform duration-1000 ease-in-out lg:group-hover:translate-y-0 translate-y-full z-0"></div>
@@ -145,9 +141,7 @@ const Services = () => {
                     </span>
                   </div>
                   <div className="text-theme-black text-base lg:text-[0.75rem] leading-[20px] font-semibold mt-[.75rem] lg:group-hover:text-theme-white transition-all duration-1000 ease-in-out md:hidden group-hover:block">
-                    Busy lives, long work hours, and lack of time lead to
-                    unhealthy choices like junk food or impersonal restaurant
-                    meals.
+                  FGITO also provides subscription-based delivery services. Where you can schedule monthly meal plans and enjoy hassle-free delivery on time.
                   </div>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full lg:bg-theme-green transition-transform duration-1000 ease-in-out group-hover:translate-y-0 translate-y-full z-0"></div>
