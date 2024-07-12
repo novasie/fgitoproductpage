@@ -202,7 +202,7 @@ const Header = () => {
                 </a>
               </div>
             </div>
-            <div className="absolute bottom-0 left-0">jehjk</div>
+            <div className="absolute bottom-0 left-0"></div>
           </div>
         </div>
       </div>

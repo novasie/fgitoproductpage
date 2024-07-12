@@ -5,7 +5,7 @@ import { PrimaryButton } from "../common/Button";
 const Homechef = () => {
   return (
     <>
-      <div className="h-fit w-full relative overflow-hidden">
+      <div className="h-fit w-full  overflow-hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1000 100"
@@ -28,24 +28,24 @@ const Homechef = () => {
             d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"
           ></path>{" "} */}
         </svg>
-        <div className="w-full bg-theme-yellow-50  px-[2.7rem] py-[6rem]">
-        <div className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase font-normal text-[.75rem] tracking-[3px] z-[10] relative">
+        <div className="w-full  bg-theme-yellow-50  px-[2.7rem] pt-[4rem] lg:pt-[6rem]">
+        <div className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase font-normal  text-[.75rem] tracking-[3px] z-[10] relative">
                 Become A Homechef
           </div>
-          <div className="flex flex-col-reverse mt-[3rem] gap-16 lg:gap-0 items-center lg:flex-row justify-start lg:items-start">
+          <div className="flex flex-col-reverse py-[3rem] items-center gap-10 w-full lg:flex-row  lg:items-start">
           
-            <div className=" w-[80%] md:w-[70%] flex flex-col items-center lg:w-[45%]">
+            <div className=" gap-4 w-[16rem] sm:w-[24rem] md:w-[28rem] flex flex-col lg:mt-[4rem] items-center lg:items-start lg:w-[45%]">
               
-              <div className="text-theme-black text-[2rem] sm:text-[2.5rem] md:text-[3rem] md:leading-[70px] text-center leading-[40px] w-full lg:w-[70%]">
+              <div className="text-theme-black text-[2rem]  text-center lg:text-start  md:text-[2.5rem] md:leading-[3.2rem] leading-[38px] w-full ">
               Showcase your culinary magic to the {" "}
                 <span className="text-theme-green font-semibold">WORLD</span>
               </div>
-              <div className="text-theme-black text-[1rem] sm:text-[1.2rem] sm:leading-[30px] md:text-[1.5rem] md:leading-[40px] leading-[20px] lg:w-[70%] font-extralight mt-[2rem] text-justify">
+              <div className="text-theme-black text-base lg:text-[1.1rem] lg:leading-[1.6rem] leading-[20px] w-full font-extralight text-justify ">
               Share your culinary creations with the world! Unleash your cooking magic and let everyone savor the flavors you create. Join us and showcase your skills, bringing the joy of home-cooked meals to a wider audience. Let your kitchen talents shine and connect with food lovers everywhere!
               </div>
             </div>
 
-            <div className="w-[65%] flex flex-col gap-5 justify-center items-center">
+            <div className="w-full flex flex-col gap-5 justify-center items-center">
               <Image src={"/img/homechef-home1.gif"} height={500} width={500} />
               <div>
                 <PrimaryButton name={"Start you journey "} />

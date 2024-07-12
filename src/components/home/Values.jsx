@@ -27,68 +27,70 @@ const Values = () => {
             d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"
           ></path>{" "}
         </svg>
-        <div className="w-full bg-theme-green-50 px-[2.7rem] py-[6rem]">
+        <div className="w-full bg-theme-green-50 px-[2.7rem] py-[4rem] lg:py-[6rem]">
           <div className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase font-normal text-xs lg:text-[.75rem] tracking-[3px] z-[10] relative">
             Our Values
           </div>
           <div className="mt-8 grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            <div className="pt-[3rem]">
-              <div className="flex flex-col justify-start items-start h-full bg-theme-white py-[2rem] px-[2.5rem] rounded-lg mt-[]">
+            <div className="mt-[1rem]">
+              <div className="flex flex-col gap-4 justify-start items-start h-full bg-theme-white py-[2rem] px-[2.5rem] rounded-lg ">
                 <Image
-                  src={"/img/icons/agreement.png"}
-                  height={120}
-                  width={120}
+                  src={"/img/icons/deal.png"}
+                  height={100}
+                  width={100}
                 />
-                <div className="text-theme-black text-[2rem] leading-[30px]  mt-[2rem]">
+                <div className="text-theme-black text-[1.5rem]  font-semibold  leading-[30px] ">
                 Collaboration
                 </div>
-                <div className="text-theme-black text-[1rem] leading-[20px]  font-extralight mt-[20px]">
+                <div className="text-theme-black  text-[1rem] leading-[20px] text-justify font-extralight ">
                 Collaborate and uplift each other to become the best versions of yourselves.
                 </div>
               </div>
             </div>
-            <div className="pt-[3rem]">
-              <div className="flex flex-col justify-start items-start h-full bg-theme-white py-[2rem] px-[2.5rem] rounded-lg">
+            <div className="mt-[1rem]">
+              <div className="flex flex-col gap-4 justify-start items-start h-full bg-theme-white py-[2rem] px-[2.5rem] rounded-lg">
                 <Image
                   src={"/img/icons/compassion.png"}
                   height={100}
                   width={100}
                 />
-                <div className="text-theme-black text-[2rem] leading-[30px]  mt-[3rem]">
+                
+                <div className="text-theme-black font-semibold text-[1.5rem] leading-[30px]">
                 Compassion
                 </div>
-                <div className="text-theme-black text-[1rem] leading-[20px]  font-extralight mt-[20px]">
+                <div className="text-theme-black text-[1rem] leading-[20px] text-justify font-extralight ">
                 Embrace compassion and kindness towards everyone around you.
                 </div>
+                
               </div>
             </div>
-            <div className="pt-[3rem]">
-              <div className="flex flex-col justify-start items-start h-full bg-theme-white py-[2rem] px-[2.5rem] rounded-lg">
+            <div className="mt-[1rem]">
+              <div className="flex flex-col gap-4 justify-start items-start h-full bg-theme-white py-[2rem] px-[2.5rem] rounded-lg">
                 <Image
                   src={"/img/icons/Commitment.png"}
                   height={100}
                   width={100}
                 />
-                <div className="text-theme-black text-[2rem] leading-[30px]  mt-[3rem]">
+                <div className="text-theme-black font-semibold text-[1.5rem]  leading-[30px]">
                 Commitment
                 </div>
-                <div className="text-theme-black text-[1rem] leading-[20px]  font-extralight mt-[20px]">
+                <div className="text-theme-black text-[1rem] leading-[20px] text-justify font-extralight">
                 Unwavering Commitment to Our Goal
                 </div>
               </div>
             </div>
-            <div className="pt-[3rem] ">
-              <div className="flex flex-col justify-start items-start bg-theme-white h-full py-[2rem] px-[2.5rem] rounded-lg">
+            <div className="mt-[1rem] ">
+              <div className="flex flex-col gap-4 justify-start items-start bg-theme-white h-full py-[2rem] px-[2.5rem] rounded-lg">
                 <Image
                   src={"/img/icons/goal.png"}
 
                   height={100}
                   width={100}
                 />
-                <div className="text-theme-black text-[2rem] leading-[30px]  mt-[3rem]">
+                <div className="text-theme-black text-[1.5rem] font-semibold  leading-[30px]">
                 Conquer
                 </div>
-                <div className="text-theme-black text-[1rem] leading-[20px]  font-extralight mt-[20px]">
+                <div className="text-theme-black text-justify text-[1rem] leading-[20px]  font-extralight">
                 Conquer the world with your humility and grace
                 </div>
               </div>

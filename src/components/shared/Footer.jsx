@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div style={{ backgroundImage: "url('/img/homeBannerBg.svg')", backgroundSize: 'cover', backgroundPosition: 'center' }} className=" w-full px-[10%] py-[2rem] lg:px-[100px]">
+      <div style={{ backgroundImage: "url('/img/homeBannerBg.svg')", backgroundSize: 'cover', backgroundPosition: 'center' }} className=" w-full px-[2.7rem] py-[4rem] lg:py-[6rem]">
         <div className="flex flex-col w-full  gap-8 md:gap-0 md:flex-row justify-between items-center md:items-start md:relative">
           <div className="flex flex-col items-center  gap-2 md:items-start w-full md:w-[40%]">
             <Image src={"/logo.png"} width={150} height={150} />

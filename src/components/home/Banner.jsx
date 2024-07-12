@@ -5,12 +5,14 @@ import { PrimaryButton } from "../common/Button";
 const Banner = () => {
   return (
     <>
-      <div className="w-full px-[2.7rem] py-[6rem]  flex  flex-col-reverse lg:flex-row justify-center items-center bg-theme-green-900 h-auto gap-10 lg:gap-[100px] relative overflow-hidden ">
-        <div className="z-[1] w-fit flex flex-col gap-12 items-center justify-start lg:gap-[30px] ">
-          <div className="text-theme-white text-[1.8rem] text-center text w-full sm:text-[2.7rem] leading-12 tracking-[1px] lg:text-[2.5rem] xl:text-[3rem] lg:leading-[55px] font-extralight lg:tracking-[-2px]">
-            Craving the comfort of <br />
-            home-cooked meals? <br />
+      <div className="w-full px-[2.7rem] py-[6rem] flex flex-col-reverse lg:flex-row justify-center items-center bg-theme-green-900 h-auto gap-10  lg:gap-[12rem] relative overflow-hidden ">
+        <div className="z-[1] w-fit flex flex-col gap-12 lg:mt-[5rem] items-center justify-start lg:gap-[30px] ">
+          <div className="text-theme-white w-[18rem] sm:w-[28rem] md:w-[34rem] lg:w-[32rem] text-[1.6rem] text-center sm:text-[2.2rem] md:text-[2.6rem]  tracking-[0.8px] lg:text-[2.8rem] leading-16  md:leading-[55px] font-extralight lg:tracking-[-2px]">
+            Craving the comfort of 
+            home-cooked meals?
             Your taste of home is here
+            
+            
           </div>
           <div className="flex flex-col md:flex-row gap-5 xl:gap-3 xl:justify-start">
             <div>
@@ -21,11 +23,11 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="z-[1] mt-[4rem] md:mt-0 min-w-[15rem]">
+        <div className="z-[1] mt-[4rem] md:mt-0">
           <Image
             className="z-10"
             // src="/doodle/doodleimage_5.png"
-            src="/comming_soon.png"
+            src="/comming_soon .png"
             height={500}
             width={500}
           />

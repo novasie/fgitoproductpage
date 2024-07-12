@@ -5,7 +5,7 @@ export const PrimaryButton = ({ name }) => {
     <>
       <button
         className={
-          "px-[1rem] md:px-[2rem] w-[18rem] md:w-auto py-[1rem] text-[1rem] md:text-[1.25rem] bg-theme-red-100 text-theme-white uppercase font-bold tracking-[4px] rounded"
+          "px-[2rem] w-full font-bold text-[.75rem] tracking-[3px]  md:w-auto py-[1rem]  md:text-[1.25rem] bg-theme-red-100 text-theme-white uppercase rounded"
         }
       >
         {name}

@@ -4,11 +4,12 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="h-fit w-full bg-theme-white ">
+      <div className="h-fit  w-full bg-theme-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1000 100"
           preserveAspectRatio="none"
+         
         >
           {" "}
           <path
@@ -26,7 +27,7 @@ const About = () => {
             d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"
           ></path>{" "}
         </svg>
-        <div className="w-full px-[2.7rem] py-[6rem]">
+        <div className="w-full px-[2.7rem] pt-[3rem]">
           <div className="flex flex-col md:flex-row gap-12 md:gap-24">
             <div className="flex flex-col gap-8 md:w-1/2">
               <div className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase font-normal text-[.75rem] tracking-[3px]">
