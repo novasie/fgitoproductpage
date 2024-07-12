@@ -1,8 +1,15 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import { PrimaryButton } from "../common/Button";
 
 const Banner = () => {
+  const tryFgitoUrl = "https://wa.me/+918081221164";
+  
+
+  
+  
+
   return (
     <>
       <div className="w-full px-[2.7rem] py-[6rem] flex flex-col-reverse lg:flex-row justify-center items-center bg-theme-green-900 h-auto gap-10  lg:gap-[12rem] relative overflow-hidden ">
@@ -16,10 +23,22 @@ const Banner = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-5 xl:gap-3 xl:justify-start">
             <div>
-              <PrimaryButton name={"try fgito"}></PrimaryButton>
+          
+                <a href={tryFgitoUrl} target="_blank" rel="noopener noreferrer">
+                  <PrimaryButton name={"try fgito"}></PrimaryButton>
+                </a>
+              
+            
             </div>
             <div>
+          <Link href="#HomechefSection">
+              
               <PrimaryButton name={"become homechef"}></PrimaryButton>
+            
+          </Link>
+             
+          
+          
             </div>
           </div>
         </div>

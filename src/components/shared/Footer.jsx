@@ -2,9 +2,10 @@ import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
+  const HomechefUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdoQDcz8AQowT3mQVkrpIelZGqTJRV6ecBx-zA4SiUZk5wsaA/viewform";
   return (
     <>
-      <div style={{ backgroundImage: "url('/img/homeBannerBg.svg')", backgroundSize: 'cover', backgroundPosition: 'center' }} className=" w-full px-[2.7rem] py-[4rem] lg:py-[6rem]">
+      <div style={{ backgroundImage: "url('/img/homeBannerBg.svg')", backgroundSize: 'cover', backgroundPosition: 'center' }} className=" w-full px-[2.7rem] py-[2rem] lg:py-[3rem]">
         <div className="flex flex-col w-full  gap-8 md:gap-0 md:flex-row justify-between items-center md:items-start md:relative">
           <div className="flex flex-col items-center  gap-2 md:items-start w-full md:w-[40%]">
             <Image src={"/logo.png"} width={150} height={150} />
@@ -18,7 +19,7 @@ const Footer = () => {
           <div className=" w-full md:w-[60%] h-full flex flex-col justify-start items-center md:items-end gap-8 md:gap-0">
             <div className="relative flex flex-col justify-center items-start gap-4">
               <a
-                href="#_"
+                href="https://wa.me/+918081221164"
                 class="relative inline-flex items-center justify-center p-4 px-8 py-3 overflow-hidden font-bold uppercase text-theme-white transition duration-300 ease-out border-[.0rem] border-theme-red-100 rounded-md group text-[1.25rem] bg-theme-green-300"
               >
                 <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-theme-red-100 group-hover:translate-x-0 ease gap-2">
@@ -44,7 +45,7 @@ const Footer = () => {
                 <span class="relative invisible">Order home Food now</span>
               </a>
               <a
-                href="#_"
+                href={HomechefUrl}
                 class="relative inline-flex items-center justify-center p-4 px-8 py-3 overflow-hidden font-bold uppercase text-theme-white transition duration-300 ease-out border-[.0rem] border-theme-red-100 rounded-md group text-[1.25rem] bg-theme-green-300 w-full"
               >
                 <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-theme-red-100 group-hover:translate-x-0 ease gap-2">
@@ -65,9 +66,20 @@ const Footer = () => {
                   </svg>
                 </span>
                 <span class="absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">
+                  
+               
                   apply for homechef
+                 
+                 
                 </span>
-                <span class="relative invisible">apply for homechef</span>
+                <span class="relative invisible">
+                  
+              
+               
+                  apply for homechef
+                 
+                  
+                  </span>
               </a>
             </div>
             <div className="flex md:items-start gap-4 md:absolute md:bottom-0">

@@ -3,9 +3,11 @@ import React from "react";
 import { PrimaryButton } from "../common/Button";
 
 const Homechef = () => {
+
+  const ApplyUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdoQDcz8AQowT3mQVkrpIelZGqTJRV6ecBx-zA4SiUZk5wsaA/viewform";
   return (
     <>
-      <div className="h-fit w-full  overflow-hidden">
+      <div id="HomechefSection" className="h-fit w-full  overflow-hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1000 100"
@@ -48,7 +50,9 @@ const Homechef = () => {
             <div className="w-full flex flex-col gap-5 justify-center items-center">
               <Image src={"/img/homechef-home1.gif"} height={500} width={500} />
               <div>
-                <PrimaryButton name={"Start you journey "} />
+               <a href={ApplyUrl}>
+                <PrimaryButton name={"Start your journey"} />
+                </a>
               </div>
             </div>
           </div>
