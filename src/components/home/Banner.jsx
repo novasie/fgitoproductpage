@@ -42,7 +42,7 @@ const Banner = () => {
         <div className="z-[1] mt-[4rem] md:mt-0">
           <Image
             className="z-10"
-            src="/comming_soon.png"
+            src="/coming_soon.png"
             height={500}
             width={500}
           />
