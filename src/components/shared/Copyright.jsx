@@ -18,7 +18,7 @@ const Copyright = () => {
           </span>
 
           <span className="text-theme-yellow font-bold">
-            <a href="/">FGITO</a>
+            <a href="/">Novasie Technologies pvt Ltd</a>
           </span>
           {/* <span>
             <Image src={"/novasie.png"} height={20} width={20} />{" "}
