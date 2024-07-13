@@ -6,10 +6,10 @@ import React from "react";
 const Copyright = () => {
   return (
     <div className="w-full">
-      <div className="flex justify-center items-center py-[10px] bg-theme-green ">
+      <div className="justify-center items-center py-[10px] bg-theme-green ">
         <div
           className={clsx(
-            "text-theme-white text-[15px] text-center flex justify-center items-center gap-1",
+            "text-theme-white  text-xs lg:text-[15px] text-center flex justify-center items-center gap-1",
             roboto_500.className
           )}
         >
