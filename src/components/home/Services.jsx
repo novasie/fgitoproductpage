@@ -141,7 +141,7 @@ const Services = () => {
                     </span>
                   </div>
                   <div className="text-theme-black text-base lg:text-[0.75rem] leading-[20px] font-semibold mt-[.75rem] lg:group-hover:text-theme-white transition-all duration-1000 ease-in-out md:hidden group-hover:block">
-                  FGITO also provides subscription-based delivery services. Where you can schedule monthly meal plans and enjoy hassle-free delivery on time.
+                  Get your home-cooked food whenever you need it with our efficient on-demand ordering service.
                   </div>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full lg:bg-theme-green transition-transform duration-1000 ease-in-out group-hover:translate-y-0 translate-y-full z-0"></div>
