@@ -128,7 +128,7 @@ const Services = () => {
               </div>
               <div className="group w-full  sm:my-4 sm:w-[45%] lg:w-[24%] h-[500px] border-[.6px] border-opacity-[.6] rounded-sm border-theme-black py-[.25rem] px-[.125rem] relative overflow-hidden">
                 <div className="absolute bottom-[2rem] md:bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
-                  <div className="transition-transform duration-1000 ease-in-out group-hover:scale-105">
+                  <div className="transition-transform duration-1000 ease-in-out lg:group-hover:scale-105">
                     <Image src={"/services/apps.png"} width={80} height={80} />
                   </div>
                   <div className="text-theme-black text-xl lg:text-[1.25rem] leading-6 font-bold uppercase mt-[.75rem] transition-all duration-1000 ease-in-out">
@@ -141,7 +141,7 @@ const Services = () => {
                     </span>
                   </div>
                   <div className="text-theme-black text-base lg:text-[0.75rem] leading-[20px] font-semibold mt-[.75rem] lg:group-hover:text-theme-white transition-all duration-1000 ease-in-out md:hidden group-hover:block">
-                  FGITO also provides subscription-based delivery services. Where you can schedule monthly meal plans and enjoy hassle-free delivery on time.
+                  Get your home-cooked food whenever you need it with our efficient on-demand ordering service.
                   </div>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full lg:bg-theme-green transition-transform duration-1000 ease-in-out group-hover:translate-y-0 translate-y-full z-0"></div>

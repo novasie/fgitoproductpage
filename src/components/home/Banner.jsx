@@ -1,10 +1,22 @@
+'use client';
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
 import { PrimaryButton } from "../common/Button";
 
 const Banner = () => {
+  const router = useRouter();
   const tryFgitoUrl = "https://wa.me/+918081221164";
+
+  const scrollToHomechef = (e) => {
+    e.preventDefault();
+    const homechefSection = document.getElementById('HomechefSection');
+    if (homechefSection) {
+      homechefSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div className="w-full relative px-[2.7rem] py-[6rem] flex flex-col-reverse lg:flex-row justify-center items-center bg-theme-green-900 h-auto gap-10  lg:gap-[12rem] overflow-hidden ">
@@ -13,41 +25,30 @@ const Banner = () => {
             Craving the comfort of 
             home-cooked meals?
             Your taste of home is here
-            
-            
           </div>
           <div className="flex flex-col md:flex-row gap-5 xl:gap-3 xl:justify-start">
             <div>
-          
-                <a href={tryFgitoUrl} target="_blank" rel="noopener noreferrer">
-                  <PrimaryButton name={"try fgito"}></PrimaryButton>
-                </a>
-              
-            
+              <a href={tryFgitoUrl} target="_blank" rel="noopener noreferrer">
+                <PrimaryButton name={"try fgito"}></PrimaryButton>
+              </a>
             </div>
             <div>
-          <Link href="#HomechefSection">
-              
-              <PrimaryButton name={"become homechef"}></PrimaryButton>
-            
-          </Link>
-             
-          
-          
+              <a href="#HomechefSection" onClick={scrollToHomechef}>
+                <PrimaryButton name={"become homechef"}></PrimaryButton>
+              </a>
             </div>
           </div>
         </div>
         <div className="z-[1] mt-[4rem] md:mt-0">
           <Image
             className="z-10"
-            // src="/doodle/doodleimage_5.png"
-            src="/comming_soon .png"
+            src="/comming_soon.png"
             height={500}
             width={500}
           />
         </div>
         <Image
-          className="absolute hidden lg:block z-[0] top-5 left-5 opacity-[1] "
+          className="absolute hidden lg:block z-[0] top-5 left-5 opacity-[1]"
           src={"/img/logo.png"}
           height={120}
           width={120}
@@ -59,20 +60,10 @@ const Banner = () => {
             height={20}
             width={20}
           />
-          <span className=" text-theme-white font-bold text-[0.8rem] sm:text-[1.2rem] lg:text-[.75rem]">
+          <span className="text-theme-white font-bold text-[0.8rem] sm:text-[1.2rem] lg:text-[.75rem]">
             Only Available in Noida
           </span>
         </div>
-
-        {/* <div className="text-theme-white  absolute bottom-10 left-20 flex gap-5">
-          <button className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase text-[1rem] tracking-[3px] z-[10] font-bold">
-            Become Homechef
-          </button>
-          <button className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase text-[1rem] tracking-[3px] z-[10] font-bold">
-            Download app
-          </button>
-
-        </div> */}
       </div>
     </>
   );
