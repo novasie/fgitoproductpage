@@ -4,11 +4,12 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="h-fit w-full bg-theme-white ">
+      <div className="h-fit  w-full bg-theme-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1000 100"
           preserveAspectRatio="none"
+         
         >
           {" "}
           <path
@@ -26,7 +27,7 @@ const About = () => {
             d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"
           ></path>{" "}
         </svg>
-        <div className="w-full px-[2.7rem] py-[6rem]">
+        <div className="w-full px-[2.7rem] pt-[3rem]">
           <div className="flex flex-col md:flex-row gap-12 md:gap-24">
             <div className="flex flex-col gap-8 md:w-1/2">
               <div className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase font-normal text-[.75rem] tracking-[3px]">
@@ -40,8 +41,7 @@ const About = () => {
                   Why FGITO?
                 </div>
                 <div className="text-theme-black w-full text-base  lg:text-[1rem] leading-[20px]  lg:w-[70%] font-extralight">
-                  Home cooks prioritize hygiene and quality over profit
-                  Reconnect with the love and tradition of home-cooked meals.
+                Home cooks a.k.a our mother priorities hygiene and quality over profit Reconnect with the love and tradition of home-cooked meals.
                 </div>
               </div>
             </div>
@@ -57,9 +57,7 @@ const About = () => {
                     Problem
                   </div>
                   <div className="text-theme-black text-base lg:text-[1rem] leading-[20px] md:w-[70%]  w-full font-extralight text-justify">
-                    Busy lives, long work hours, and lack of time lead to
-                    unhealthy choices like junk food or impersonal restaurant
-                    meals.
+                  Busy lives, long working hours, and lack of time lead to unhealthy food choices
                   </div>
                 </div>
               </div>
@@ -74,8 +72,7 @@ const About = () => {
                     Solution
                   </div>
                   <div className="text-theme-black text-base lg:text-[1rem] leading-[20px] sm:w-[90%] md:w-[70%]  font-extralight text-justify">
-                    FGITO connects you with home chefs who bring back the love
-                    and taste of "Ghar ka Khana Ghar se dur"
+                  FGITO connects you with our home chefs who bring back the love and taste of "Ghar ka Khana Ghar se dur"
                   </div>
                 </div>
               </div>
@@ -90,8 +87,7 @@ const About = () => {
                     Benefits
                   </div>
                   <div className="text-theme-black text-base lg:text-[1rem] leading-[20px]  md:w-[70%] font-extralight  text-justify">
-                    FGITO connects you with home chefs who bring back the love
-                    and taste of "Ghar ka Khana Ghat se dur"
+                  Eat healthier, boost your immunity, leave the delivery doubts on FGITO and rediscover the joy of home food!
                   </div>
                 </div>
               </div>
@@ -107,8 +103,7 @@ const About = () => {
                     Call to Action
                   </div>
                   <div className="text-theme-black text-base lg:text-[1rem] leading-[20px]  sm:w-[90%] md:w-[70%] font-extralight text-justify">
-                    Eat healthier, boost your immunity, and ditch the delivery
-                    doubts FGITO and rediscover the joy of real food!
+                  Skip the stress, skip the junk - Order on FGITO and enjoy “Maa ke hath ka khana”
                   </div>
                 </div>
               </div>
