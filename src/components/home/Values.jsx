@@ -43,7 +43,7 @@ const Values = () => {
                 Collaboration
                 </div>
                 <div className="text-theme-black  text-[1rem] leading-[20px] text-justify font-extralight ">
-                Collaborate and uplift each other to become the best versions of yourselves.
+                Collaborate and uplift each other to become best version of oneself.
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@ const Values = () => {
                 Commitment
                 </div>
                 <div className="text-theme-black text-[1rem] leading-[20px] text-justify font-extralight">
-                Unwavering Commitment to Our Goal
+                Unwavering Commitment to Our Goal.
                 </div>
               </div>
             </div>
@@ -91,7 +91,7 @@ const Values = () => {
                 Conquer
                 </div>
                 <div className="text-theme-black text-justify text-[1rem] leading-[20px]  font-extralight">
-                Conquer the world with your humility and grace
+                Conquer the world with your humility and grace.
                 </div>
               </div>
             </div>

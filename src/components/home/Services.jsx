@@ -38,7 +38,7 @@ const Services = () => {
                 <span className="text-theme-green font-semibold">FGITO</span>
               </div>
               <div className="text-theme-black text-base lg:text-[1rem] leading-[20px] w-full md:w-[70%] lg:w-[80%] font-extralight mt-[2rem] text-justify">
-              FGITO proudly offers a variety of services designed to connect you with the joys of home-cooked meals. If you're craving the taste of homemade food, we've got you covered.
+              FGITO proudly offers a variety of services designed to connect you with the joy of home-cooked meals. If you're craving the taste of homemade food, we've got you covered.
               </div>
             </div>
 
