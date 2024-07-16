@@ -9,7 +9,7 @@ const Copyright = () => {
       <div className="justify-center items-center py-[10px] bg-theme-green ">
         <div
           className={clsx(
-            "text-theme-white  text-xs lg:text-[15px] text-center flex justify-center items-center gap-1",
+            "text-theme-white  text-[8px] lg:text-[15px] text-center flex justify-center items-center gap-1",
             roboto_500.className
           )}
         >
