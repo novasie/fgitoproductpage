@@ -36,9 +36,9 @@ const Homechef = () => {
           </div>
           <div className="flex flex-col-reverse py-[3rem] items-center gap-10 w-full lg:flex-row  lg:items-start">
           
-            <div className=" gap-4 w-[16rem] sm:w-[24rem] md:w-[28rem] flex flex-col lg:mt-[4rem] items-center lg:items-start lg:w-[45%]">
+            <div className=" gap-4 px-6 sm:w-[24rem] md:w-[28rem] flex flex-col lg:mt-[4rem] items-center lg:items-start lg:w-[45%]">
               
-              <div className="text-theme-black text-[2rem]  text-center lg:text-start  md:text-[2.5rem] md:leading-[3.2rem] leading-[38px] w-full ">
+              <div className="text-theme-black text-[1.7rem] sm:text-[2rem] text-left sm:text-center lg:text-start  md:text-[2.5rem] md:leading-[3.2rem] leading-[38px] w-full">
               Showcase your culinary magic to the {" "}
                 <span className="text-theme-green font-semibold">WORLD</span>
               </div>
