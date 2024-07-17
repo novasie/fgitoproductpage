@@ -43,8 +43,8 @@ const Services = () => {
             </div>
 
             <div className="w-full md:w-1/2 lg:w-3/5 flex-wrap mt-10 lg:mt-0 flex justify-between items-start gap-8 lg:gap-0 ">
-              <div className="group w-full sm:my-4 sm:w-[45%] lg:w-[24%] h-[500px] border-[.6px] border-opacity-[.6] rounded-sm border-theme-black py-[.25rem] px-[.125rem] relative overflow-hidden">
-                <div className="absolute bottom-[2rem] md:bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
+              <div className="group w-full sm:my-4 sm:w-[45%] lg:w-[24%] h-fit sm:h-[500px] border-[.6px] border-opacity-[.6] rounded-sm border-theme-black py-4 sm:py-[.25rem] px-[.125rem] relative overflow-hidden">
+                <div className="sm:absolute bottom-[2rem] md:bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
                   <div className="transition-transform duration-1000 ease-in-out lg:group-hover:scale-105">
                     <Image src={"/services/bulk.png"} width={80} height={80} />
                   </div>
@@ -69,8 +69,8 @@ const Services = () => {
                   info
                 </button>
               </div>
-              <div className="group w-full sm:my-4 sm:w-[45%] lg:w-[24%] h-[500px] border-[.6px] border-opacity-[.6] rounded-sm border-theme-black py-[.25rem] px-[.125rem] relative overflow-hidden">
-                <div className="absolute bottom-[2rem] md:bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
+              <div className="group w-full sm:my-4 sm:w-[45%] lg:w-[24%] h-fit sm:h-[500px] border-[.6px] border-opacity-[.6] rounded-sm border-theme-black py-4 sm:py-[.25rem] px-[.125rem] relative overflow-hidden">
+                <div className="sm:absolute bottom-[2rem] md:bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
                   <div className="transition-transform duration-1000 ease-in-out lg:group-hover:scale-105">
                     <Image
                       src={"/services/subscription.png"}
@@ -96,8 +96,8 @@ const Services = () => {
                   info
                 </button>
               </div>
-              <div className="group w-full sm:my-4 sm:w-[45%] lg:w-[24%] h-[500px] border-[.6px] border-opacity-[.6] rounded-sm border-theme-black py-[.25rem] px-[.125rem] relative overflow-hidden">
-                <div className="absolute bottom-[2rem] md:bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
+              <div className="group w-full sm:my-4 sm:w-[45%] lg:w-[24%] h-fit sm:h-[500px] border-[.6px] border-opacity-[.6] rounded-sm border-theme-black py-4 sm:py-[.25rem] px-[.125rem] relative overflow-hidden">
+                <div className="sm:absolute bottom-[2rem] md:bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
                   <div className="transition-transform duration-1000 ease-in-out lg:group-hover:scale-105">
                     <Image
                       src={"/services/Cvendor.png"}
@@ -126,8 +126,8 @@ const Services = () => {
                   info
                 </button>
               </div>
-              <div className="group w-full  sm:my-4 sm:w-[45%] lg:w-[24%] h-[500px] border-[.6px] border-opacity-[.6] rounded-sm border-theme-black py-[.25rem] px-[.125rem] relative overflow-hidden">
-                <div className="absolute bottom-[2rem] md:bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
+              <div className="group w-full  sm:my-4 sm:w-[45%] lg:w-[24%] h-fit sm:h-[500px] border-[.6px] border-opacity-[.6] rounded-sm border-theme-black py-4 sm:py-[.25rem] px-[.125rem] relative overflow-hidden">
+                <div className="sm:absolute bottom-[2rem] md:bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
                   <div className="transition-transform duration-1000 ease-in-out lg:group-hover:scale-105">
                     <Image src={"/services/apps.png"} width={80} height={80} />
                   </div>
