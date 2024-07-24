@@ -3,7 +3,7 @@ import React from "react";
 // import CollabImg from "../../../public/img/icons/agreement.png"
 const Values = () => {
   return (
-    <>
+    <section>
       <div className="h-fit w-full relative">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,6 +38,7 @@ const Values = () => {
                   src={"/img/icons/deal.png"}
                   height={100}
                   width={100}
+                  alt="icon"
                 />
                 <div className="text-theme-black text-[1.5rem]  font-semibold  leading-[30px] ">
                 Collaboration
@@ -53,6 +54,7 @@ const Values = () => {
                   src={"/img/icons/compassion.png"}
                   height={100}
                   width={100}
+                  alt="icon"
                 />
                 
                 <div className="text-theme-black font-semibold text-[1.5rem] leading-[30px]">
@@ -70,6 +72,7 @@ const Values = () => {
                   src={"/img/icons/Commitment.png"}
                   height={100}
                   width={100}
+                  alt="icon"
                 />
                 <div className="text-theme-black font-semibold text-[1.5rem]  leading-[30px]">
                 Commitment
@@ -86,6 +89,7 @@ const Values = () => {
 
                   height={100}
                   width={100}
+                  alt="icon"
                 />
                 <div className="text-theme-black text-[1.5rem] font-semibold  leading-[30px]">
                 Conquer
@@ -98,7 +102,7 @@ const Values = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

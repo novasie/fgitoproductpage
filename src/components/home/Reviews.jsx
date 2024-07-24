@@ -3,7 +3,7 @@ import React from "react";
 
 const Reviews = () => {
   return (
-    <>
+    <section>
       <div className="h-fit w-full relative hidden">
         <div className="w-full bg-theme-white px-[100px] py-[3rem]">
           <div className="px-[2rem] w-fit h-fit py-[1rem] bg-theme-green rounded-[100px] text-theme-white uppercase font-normal text-[.75rem] tracking-[3px] z-[10] relative">
@@ -14,7 +14,7 @@ const Reviews = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

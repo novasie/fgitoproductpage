@@ -3,7 +3,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <>
+    <section>
       <div className="h-fit w-full relative overflow-hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +76,7 @@ const Services = () => {
                       src={"/services/subscription.png"}
                       width={80}
                       height={80}
+                      alt="img"
                     />
                   </div>
                   <div className="text-theme-black text-xl lg:text-[1.25rem] leading-6 font-bold uppercase mt-[.75rem] transition-all duration-1000 ease-in-out">
@@ -103,6 +104,7 @@ const Services = () => {
                       src={"/services/Cvendor.png"}
                       width={80}
                       height={80}
+                      alt="img"
                     />
                   </div>
                   <div className="text-theme-black text-xl lg:text-[1.25rem] leading-6 font-bold uppercase mt-[.75rem] transition-all duration-1000 ease-in-out">
@@ -129,7 +131,7 @@ const Services = () => {
               <div className="group w-full  sm:my-4 sm:w-[45%] lg:w-[24%] h-fit sm:h-[500px] border-[.6px] border-opacity-[.6] rounded-sm border-theme-black py-4 sm:py-[.25rem] px-[.125rem] relative overflow-hidden">
                 <div className="sm:absolute bottom-[2rem] md:bottom-0 py-[.75rem] px-[.5rem] z-10 transition-all duration-1000 ease-in-out">
                   <div className="transition-transform duration-1000 ease-in-out lg:group-hover:scale-105">
-                    <Image src={"/services/apps.png"} width={80} height={80} />
+                    <Image alt="img" src={"/services/apps.png"} width={80} height={80} />
                   </div>
                   <div className="text-theme-black text-xl lg:text-[1.25rem] leading-6 font-bold uppercase mt-[.75rem] transition-all duration-1000 ease-in-out">
                     <span className="text-theme-red-100 transition-all duration-1000 ease-in-out">
@@ -153,7 +155,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

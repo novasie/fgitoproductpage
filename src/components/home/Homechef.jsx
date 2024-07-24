@@ -6,7 +6,7 @@ const Homechef = () => {
 
   const ApplyUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdoQDcz8AQowT3mQVkrpIelZGqTJRV6ecBx-zA4SiUZk5wsaA/viewform";
   return (
-    <>
+    <section>
       <div id="HomechefSection" className="h-fit w-full  overflow-hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const Homechef = () => {
             </div>
 
             <div className="w-full flex flex-col gap-5 justify-center items-center">
-              <Image src={"/img/homechef-home1.gif"} height={500} width={500} />
+              <Image alt="img" src={"/img/homechef-home1.gif"} height={500} width={500} />
               <div>
                <a href={ApplyUrl}>
                 <PrimaryButton name={"Start your journey"} />
@@ -58,7 +58,7 @@ const Homechef = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <>
+    <section>
       <div className="h-fit  w-full bg-theme-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -51,6 +51,7 @@ const About = () => {
                   src={"/img/icons/problem.png"}
                   height={100}
                   width={100}
+                  alt="icon"
                 />
                 <div className="flex flex-col gap-4 lg:gap-6">
                   <div className="text-theme-black text-2xl lg:text-[2rem]  leading-[30px] sm:w-[60%]  ">
@@ -66,6 +67,7 @@ const About = () => {
                   src={"/img/icons/solution.png"}
                   height={100}
                   width={100}
+                  alt="icon"
                 />
                 <div className="flex flex-col gap-4 lg:gap-6">
                   <div className="text-theme-black text-2xl lg:text-[2rem] leading-[30px] sm:w-[60%] ">
@@ -81,6 +83,7 @@ const About = () => {
                   src={"/img/icons/benefit.png"}
                   height={100}
                   width={100}
+                  alt="icon"
                 />
                 <div className="flex flex-col gap-4 lg:gap-6">
                   <div className="text-theme-black text-2xl lg:text-[2rem] leading-[30px] sm:w-[60%] ">
@@ -96,6 +99,7 @@ const About = () => {
                   src={"/img/icons/calltoaction.png"}
                   height={100}
                   width={100}
+                  alt="icon"
                 />
 
                 <div className="flex flex-col gap-4 lg:gap-6">
@@ -111,7 +115,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
