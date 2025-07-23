@@ -37,6 +37,8 @@ import {
 } from "lucide-react";
 import { headingData } from "@/data/orderNowData";
 import { bulkOrderSchema } from "@/utils/validation/bulkOrder";
+import { emailSender } from "@/utils/customFunction/emailSender";
+import { EMAIL_TYPE } from "@/utils/constant";
 
 const OrderNow = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -56,11 +58,15 @@ const OrderNow = () => {
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
+    const fullAddress = `${data.address}, ${data.city}, ${data.district}, ${data.state}, ${data.zipCode}, ${data.country}`;
+    data.fullAddress = fullAddress;
+    emailSender(EMAIL_TYPE.BULK_ORDER, data);
     console.log("Form Data Submitted:", data);
     setTimeout(() => {
       setSubmittedData(data);
       setShowAlert(true);
-      reset();
+      setIsSubmitting(false);
+      reset()
     }, 1000);
   };
 
@@ -345,32 +351,167 @@ const OrderNow = () => {
             </Card>
           </div>
 
-          {/* Full Width Fields */}
+          {/* Address Information Card */}
           <Card className="shadow-lg border-l-4 border-l-theme-yellow bg-theme-white">
-            <CardContent className="p-8 space-y-6">
+            <CardHeader className="pb-4">
+              <CardTitle className="flex items-center gap-3 text-theme-black">
+                <div className="w-10 h-10 bg-theme-yellow rounded-full flex items-center justify-center">
+                  <MapPin className="w-5 h-5 text-theme-white" />
+                </div>
+                Delivery Address Information
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
               <div className="space-y-2">
                 <Label
-                  htmlFor="fullAddress"
+                  htmlFor="address"
                   className="text-theme-black font-medium"
                 >
-                  Complete Delivery Address *
+                  Street Address *
                 </Label>
                 <div className="relative">
                   <MapPin className="absolute left-3 top-3 text-theme-gray-500 w-4 h-4" />
                   <Textarea
-                    id="fullAddress"
-                    placeholder="Enter complete address including landmarks"
-                    className="min-h-[100px] pl-10 focus:ring-theme-red focus:border-theme-red resize-none"
-                    {...register("fullAddress")}
+                    id="address"
+                    placeholder="Enter street address including landmarks"
+                    className="min-h-[80px] pl-10 focus:ring-theme-yellow focus:border-theme-yellow resize-none"
+                    {...register("address")}
                   />
                 </div>
-                {errors.fullAddress && (
+                {errors.address && (
                   <p className="text-sm text-theme-red">
-                    {errors.fullAddress.message}
+                    {errors.address.message}
                   </p>
                 )}
               </div>
 
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label
+                    htmlFor="city"
+                    className="text-theme-black font-medium"
+                  >
+                    City *
+                  </Label>
+                  <Input
+                    id="city"
+                    type="text"
+                    placeholder="Enter city"
+                    className="h-12 focus:ring-theme-yellow focus:border-theme-yellow"
+                    {...register("city")}
+                  />
+                  {errors.city && (
+                    <p className="text-sm text-theme-red">
+                      {errors.city.message}
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <Label
+                    htmlFor="district"
+                    className="text-theme-black font-medium"
+                  >
+                    District *
+                  </Label>
+                  <Input
+                    id="district"
+                    type="text"
+                    placeholder="Enter district"
+                    className="h-12 focus:ring-theme-yellow focus:border-theme-yellow"
+                    {...register("district")}
+                  />
+                  {errors.district && (
+                    <p className="text-sm text-theme-red">
+                      {errors.district.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="space-y-2">
+                  <Label
+                    htmlFor="state"
+                    className="text-theme-black font-medium"
+                  >
+                    State *
+                  </Label>
+                  <Input
+                    id="state"
+                    type="text"
+                    placeholder="Enter state"
+                    className="h-12 focus:ring-theme-yellow focus:border-theme-yellow"
+                    {...register("state")}
+                  />
+                  {errors.state && (
+                    <p className="text-sm text-theme-red">
+                      {errors.state.message}
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <Label
+                    htmlFor="zipCode"
+                    className="text-theme-black font-medium"
+                  >
+                    Zip Code *
+                  </Label>
+                  <Input
+                    id="zipCode"
+                    type="text"
+                    placeholder="6-digit zip code"
+                    maxLength="6"
+                    className="h-12 focus:ring-theme-yellow focus:border-theme-yellow"
+                    {...register("zipCode")}
+                    onInput={(e) => {
+                      // Only allow digits
+                      e.target.value = e.target.value.replace(/[^0-9]/g, "");
+                    }}
+                  />
+                  {errors.zipCode && (
+                    <p className="text-sm text-theme-red">
+                      {errors.zipCode.message}
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <Label
+                    htmlFor="country"
+                    className="text-theme-black font-medium"
+                  >
+                    Country *
+                  </Label>
+                  <Input
+                    id="country"
+                    type="text"
+                    placeholder="Enter country"
+                    className="h-12 focus:ring-theme-yellow focus:border-theme-yellow"
+                    {...register("country")}
+                  />
+                  {errors.country && (
+                    <p className="text-sm text-theme-red">
+                      {errors.country.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Required Items Card */}
+          <Card className="shadow-lg border-l-4 border-l-theme-green bg-theme-white">
+            <CardHeader className="pb-4">
+              <CardTitle className="flex items-center gap-3 text-theme-black">
+                <div className="w-10 h-10 bg-theme-green rounded-full flex items-center justify-center">
+                  <ChefHat className="w-5 h-5 text-theme-white" />
+                </div>
+                Food Requirements
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
               <div className="space-y-2">
                 <Label
                   htmlFor="requiredItems"
@@ -556,7 +697,22 @@ const OrderNow = () => {
                   {submittedData.preferedDeliveryTime}
                 </div>
                 <div className="md:col-span-2">
-                  <strong>Address:</strong> {submittedData.fullAddress}
+                  <strong>Address:</strong> {submittedData.address}
+                </div>
+                <div>
+                  <strong>City:</strong> {submittedData.city}
+                </div>
+                <div>
+                  <strong>District:</strong> {submittedData.district}
+                </div>
+                <div>
+                  <strong>State:</strong> {submittedData.state}
+                </div>
+                <div>
+                  <strong>Zip Code:</strong> {submittedData.zipCode}
+                </div>
+                <div>
+                  <strong>Country:</strong> {submittedData.country}
                 </div>
                 <div className="md:col-span-2">
                   <strong>Requirements:</strong> {submittedData.requiredItems}

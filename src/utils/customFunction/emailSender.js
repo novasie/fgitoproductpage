@@ -1,20 +1,24 @@
-import { Resend } from "resend";
 import { EMAIL_TYPE } from "../constant";
 
-const apiKey = "re_BopaBVtP_58fsZHT1ZE4XPmP6My4Nxk5R";
-const revEmail = "connect@novaise.com";
 export const emailSender = async (emailFor = EMAIL_TYPE.BULK_ORDER, data) => {
-  const resend = new Resend(apiKey);
-  // Send admin notification email
-  const adminResponse = await resend.emails.send({
-    from: "Fgito <onboarding@resend.dev>",
-    to: data.email,
-    subject: data.subject,
-    html:
-      emailFor === EMAIL_TYPE.BULK_ORDER
-        ? bulkEmailTemplate(data)
-        : homeChefEmailTemplate(data),
-  });
+  try {
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ emailFor, data }),
+    });
 
-  console.log("Admin email sent:", adminResponse);
+    if (!response.ok) {
+      throw new Error('Failed to send email');
+    }
+
+    const result = await response.json();
+    console.log("Email sent:", result);
+}
+  catch (error) {
+    console.error("Error sending email:", error);
+    throw error; // Rethrow the error for further handling if needed
+  }
 };

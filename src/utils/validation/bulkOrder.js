@@ -11,7 +11,17 @@ export const bulkOrderSchema = z.object({
   // Event Information
   dateOfEvent: z.string().min(1, "Event date is required"),
   occasion: z.string().min(2, "Occasion is required"),
-  fullAddress: z.string().min(10, "Please provide a complete address"),
+  
+  // Delivery Address Information
+  address: z.string().min(5, "Address is required"),
+  city: z.string().min(2, "City is required"),
+  state: z.string().min(2, "State is required"),
+  district: z.string().min(2, "District is required"),
+  country: z.string().min(2, "Country is required"),
+  zipCode: z.string()
+    .length(6, "Zip code must be exactly 6 digits")
+    .regex(/^\d{6}$/, "Zip code must contain only digits"),
+  
   noOfPeople: z.string().min(1, "Number of people is required"),
   preferedDeliveryTime: z
     .string()
