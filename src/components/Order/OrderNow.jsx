@@ -42,7 +42,7 @@ import { EMAIL_TYPE } from "@/utils/constant";
 
 const OrderNow = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showAlert, setShowAlert] = useState(false);
+  const [showAlert, setShowAlert] = useState(true);
   const [submittedData, setSubmittedData] = useState(null);
 
   const {
@@ -572,7 +572,7 @@ const OrderNow = () => {
                   Review & Contact
                 </h4>
                 <p className="text-theme-gray-500">
-                  We'll review your request and contact you within 24 hours
+                  We'll review your request and contact you within 12 hours
                 </p>
               </div>
               <div className="text-center">
@@ -663,7 +663,7 @@ const OrderNow = () => {
               Order Request Submitted!
             </AlertDialogTitle>
             <AlertDialogDescription className="text-center text-theme-gray-500">
-              Thank you for choosing our catering services. Here's a summary of
+              Thank you for choosing FGITO. Here's a summary of
               your request:
             </AlertDialogDescription>
           </AlertDialogHeader>
