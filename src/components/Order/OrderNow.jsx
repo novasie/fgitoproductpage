@@ -42,7 +42,7 @@ import { EMAIL_TYPE } from "@/utils/constant";
 
 const OrderNow = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showAlert, setShowAlert] = useState(true);
+  const [showAlert, setShowAlert] = useState(false);
   const [submittedData, setSubmittedData] = useState(null);
 
   const {
